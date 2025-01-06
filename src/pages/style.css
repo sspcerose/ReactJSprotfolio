@@ -1,0 +1,618 @@
+.HeadContainer {
+  height: 100vh;
+  min-height: 200px;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+.Heading {
+  /* margin-top: 0; */
+  font-size: 40px;
+  margin-bottom: -40px;
+  position: relative;
+}
+.Heading span {
+  display: inline-block;
+  width: 100%;
+}
+.Heading .MyName {
+  font-size: 60px;
+  color: #f33b2f;
+}
+.HeadingImg img {
+  max-width: 900px;
+  width: 100%;
+  height: 300px;
+  margin-top: 10px;
+  /* border: 2px solid #f33b2f; */
+  /* animation: moveVertical 3s ease-in-out infinite; */
+  z-index: -1; /* Apply animation here */
+  position: relative;
+}
+.HeadingInfo {
+  margin-top: -22rem;
+  /* text-transform: uppercase; */
+  /* letter-spacing: 1px; */
+}
+.HeadingInfo p {
+  text-align: justify;
+}
+/* .HeadingInfo .HeadButton {
+  margin-top: 500px;
+} */
+.SocialMedia,
+.ScrollDown {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  position: absolute;
+  bottom: 28px;
+  width: 50px;
+}
+.SocialMedia {
+  left: 50px;
+}
+.ScrollDown {
+  right: 50px;
+}
+.follow,
+.toscroll {
+  font-size: 15px;
+  transform: translateY(-70px) rotate(90deg);
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: #f33b2f;
+  font-weight: bold;
+}
+.arrow {
+  width: 50px;
+  height: 100px;
+  margin: 0 auto;
+  object-fit: contain;
+  color: #f33b2f;
+}
+.SocialText ul,
+li {
+  margin-bottom: 16px;
+}
+.SocialText a {
+  display: inline-block;
+  font-size: 30px;
+  transform: rotate(90deg);
+  letter-spacing: 5px;
+  margin-bottom: 10px;
+  color: #f33b2f;
+}
+
+.AboutSectionContainer {
+  padding: 100px 0;
+}
+.AboutSectionContainer .container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: left;
+}
+.LeftPartSection,
+.RightPartSection {
+  flex: 1;
+  position: relative;
+}
+.SectionTitle {
+  text-align: left;
+}
+.Paragraph {
+  margin-top: 30px;
+  margin-left: 0;
+  /* text-align: left; */
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: justify;
+  font-weight: 600;
+}
+.AboutSectionButton {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 15px;
+  margin-top: 30px;
+}
+.LeftPartSection .CustomSectionTitle {
+  text-align: left;
+  color: #f33b2f;
+}
+/* .ProjectItems{
+  
+} */
+
+.PImg {
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+  border-radius: 15px;
+  display: inline-block;
+  border: 3px solid #f33b2f;
+}
+.PImg img {
+  height: 100%;
+}
+/* .CustomProject .CustomSectionTitle{
+
+} */
+.ProjectItemInfo {
+  margin-top: 15px;
+  /* background-color: aqua; */
+  padding: 15px;
+  border-radius: 12px;
+}
+.ProjectItemTitle {
+  font-size: 16px;
+  color: #f33b2f;
+}
+.ProjectItemDesc {
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+.CustomProjectSection {
+  padding: 30px 0;
+  position: relative;
+}
+.AllProjects {
+  display: flex;
+  gap: 30px;
+  margin-top: 50px;
+}
+.SwiperContainer {
+  padding-top: 30px;
+  max-width: 100%;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  position: absolute;
+  height: 20px;
+  width: 50px !important;
+  /* background-color: #f33b2f; */
+  color: white;
+  z-index: 1;
+  /* right: 60px !important;
+  left: auto !important;
+  top: 0 !important;
+  transform: translateY(50%) !important; */
+}
+.swiper-button-next {
+  right: 10px !important;
+}
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  font-size: 20px !important;
+}
+
+.ContactContainer {
+  /* padding: 40px 0; */
+  position: relative;
+}
+.FootContainer {
+  padding: 40px 0;
+}
+.FootContainer .FootBannerHeading {
+  font-size: 40px;
+  margin-bottom: 15px;
+  color: white;
+}
+.FootContainer .FootBanner {
+  background-color: var(--deep-dark);
+  border-radius: 12px;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.ContactContainer .ContactBanner {
+  background-color: var(--deep-dark);
+  border-radius: 12px;
+  padding: 10px 0;
+  text-align: center;
+}
+.ContactContainer .ContactBannerHeading {
+  font-size: 40px;
+  margin-bottom: 15px;
+  color: white;
+}
+.FooterContainer {
+  background-color: var(--deep-dark);
+  padding-top: 50px;
+}
+.FooterContainer .container {
+  display: flex;
+  gap: 30px;
+}
+.FooterColumn {
+  flex: 2;
+}
+.FooterColumn1,
+.FooterColumn2 {
+  flex: 1;
+}
+.FooterTitle {
+  font-size: 25px;
+  margin-bottom: 12px;
+}
+
+@keyframes moveVertical {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px); /* Adjust the value for desired distance */
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.heart {
+  position: absolute; /* Position the heart absolutely */
+  z-index: 1; /* Place it under other content */
+  /* animation: moveVertical 3s ease-in-out infinite; */
+  opacity: 0.3; /* Optional: Make it semi-transparent */
+  color: #f33b2f;
+  overflow: hidden;
+}
+
+/* Different positions for each heart */
+.heart:nth-child(1) {
+  top: -100px;
+  left: 65%;
+  animation: moveVertical 5s ease-in-out infinite;
+  width: 60px;
+}
+
+.heart:nth-child(2) {
+  top: 120px;
+  right: 75%;
+  width: 60px;
+  animation: moveVertical 3s ease-in-out infinite;
+}
+
+.heart:nth-child(3) {
+  top: 200px;
+  bottom: 10%;
+  left: 80%;
+  width: 60px;
+  animation: moveVertical 7s ease-in-out infinite;
+}
+
+.contactheart {
+  position: absolute; /* Position the heart absolutely */
+  z-index: 1; /* Place it under other content */
+  /* animation: moveVertical 3s ease-in-out infinite; */
+  opacity: 0.3; /* Optional: Make it semi-transparent */
+  color: #f33b2f;
+  overflow: hidden;
+}
+
+/* Different positions for each heart */
+.contactheart:nth-child(1) {
+  top: -230px;
+  left: 65%;
+  animation: moveVertical 5s ease-in-out infinite;
+  width: 60px;
+}
+
+.contactheart:nth-child(2) {
+  top: 120px;
+  /* right: 10%; */
+  left: 1px;
+  width: 60px;
+  animation: moveVertical 3s ease-in-out infinite;
+}
+
+.contactheart:nth-child(3) {
+  top: 80px;
+  /* bottom: 10%; */
+  /* left: 80%; */
+  /* right: 10%; */
+  right: 1px;
+  width: 60px;
+  animation: moveVertical 7s ease-in-out infinite;
+}
+
+.LeftPartSection .Aboutheart {
+  position: absolute; /* Position the heart absolutely */
+  z-index: 1; /* Place it under other content */
+  /* animation: moveVertical 3s ease-in-out infinite; */
+  opacity: 0.3; /* Optional: Make it semi-transparent */
+  color: #f33b2f;
+  overflow: hidden;
+}
+
+/* Different positions for each heart */
+.LeftPartSection .Aboutheart:nth-child(1) {
+  position: absolute;
+  top: -200px;
+  left: 90%;
+  animation: moveVertical 5s ease-in-out infinite;
+  width: 60px;
+}
+
+.LeftPartSection .Aboutheart:nth-child(2) {
+  position: absolute;
+  top: 20px;
+  right: 100%;
+  width: 60px;
+  animation: moveVertical 3s ease-in-out infinite;
+}
+
+.LeftPartSection .Aboutheart:nth-child(3) {
+  position: absolute;
+  top: 170px;
+  bottom: 10%;
+  left: 300px;
+  width: 60px;
+  animation: moveVertical 7s ease-in-out infinite;
+}
+.AboutEducation .Rightheart {
+  position: absolute; /* Position the heart absolutely */
+  z-index: 1; /* Place it under other content */
+  /* animation: moveVertical 3s ease-in-out infinite; */
+  opacity: 0.3; /* Optional: Make it semi-transparent */
+  color: #f33b2f;
+  overflow: hidden;
+}
+.AboutEducation .Rightheart:nth-child(1) {
+  position: absolute;
+  top: 300px;
+  left: 80%;
+  animation: moveVertical 5s ease-in-out infinite;
+  width: 60px;
+}
+
+.AboutEducation .Rightheart:nth-child(2) {
+  position: absolute;
+  top: 20px;
+  /* right: ; */
+  left: -90px;
+  width: 60px;
+  animation: moveVertical 3s ease-in-out infinite;
+}
+
+.AboutEducation .Rightheart:nth-child(3) {
+  position: absolute;
+  top: 50px;
+  bottom: 10%;
+  left: 70%;
+  width: 60px;
+  animation: moveVertical 7s ease-in-out infinite;
+}
+.projheart {
+  position: absolute; /* Position the heart absolutely */
+  z-index: 1; /* Place it under other content */
+  /* animation: moveVertical 3s ease-in-out infinite; */
+  opacity: 0.3; /* Optional: Make it semi-transparent */
+  color: #f33b2f;
+  overflow: hidden;
+}
+
+/* Different positions for each heart */
+.projheart:nth-child(1) {
+  top: -140px;
+  left: 65%;
+  animation: moveVertical 5s ease-in-out infinite;
+  width: 60px;
+}
+
+.projheart:nth-child(2) {
+  top: 185px;
+  right: 75%;
+  width: 60px;
+  animation: moveVertical 3s ease-in-out infinite;
+}
+
+.projheart:nth-child(3) {
+  top: 200px;
+  bottom: 10%;
+  left: 80%;
+  width: 60px;
+  animation: moveVertical 7s ease-in-out infinite;
+}
+
+.LastinFooter a {
+  /* display: flex; */
+  gap: 100px !important;
+  /* display: inline-block; */
+}
+.SocMed {
+  width: 20px;
+  gap: 20px;
+}
+
+.AboutEducationContainer {
+  margin: 80px 0 80px 200px;
+}
+.AboutEducation {
+  margin-bottom: 30px;
+  position: relative;
+}
+.AboutEduc {
+  text-transform: uppercase;
+  font-size: 40px;
+  color: #f33b2f;
+}
+.AboutSkills {
+  margin-bottom: 30px;
+  /* margin-left: 70px !important; */
+}
+.AboutSki {
+  text-transform: uppercase;
+  font-size: 40px;
+  color: #f33b2f;
+}
+
+.ContactSection {
+  padding: 100px 0;
+}
+.ContactSectionWrapper {
+  display: flex;
+  gap: 50px;
+  margin-top: 30px;
+  justify-content: space-between;
+  position: relative;
+  padding-bottom: 50px;
+}
+.ContactSectionWrapper::after {
+  position: absolute;
+  content: "";
+  width: 2px;
+  height: 50%;
+  background-color: #f33b2f;
+  left: 50%;
+  top: 30%;
+  transform: translate(-50%, -50%);
+}
+.ContactSectionLeft {
+  width: 100%;
+  max-width: 500px;
+}
+.ContactSectionRight {
+  width: 100%;
+  max-width: 500px;
+}
+
+@media only screen and (max-width: 768px) {
+  .ContactSectionWrapper {
+    flex-direction: column;
+  }
+  .ContactSectionWrapper::after {
+    display: none;
+  }
+  .ContactSectionLeft,
+  .ContactSectionRight {
+    max-width: 100%;
+  }
+  .ContactSectionRight {
+    /* padding: 30px 15px 15px 15px; */
+  }
+  .AboutEduc {
+    /* text-transform: uppercase; */
+    font-size: 30px;
+  }
+  .AboutEducationContainer {
+    margin: 80px 10px 80px 30px;
+  }
+  .HeadContainer {
+    min-height: 750px;
+  }
+  .Heading {
+    font-size: 20px;
+    margin-bottom: -3rem;
+  }
+  .Heading .MyName {
+    font-size: 30px;
+  }
+  .HeadingImg img {
+    height: 300px;
+  }
+
+  .HeadingInfo {
+    margin-top: -22rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  .HeadingInfo p {
+    text-align: justify;
+  }
+
+  .SocialMedia,
+  .ScrollDown {
+    bottom: 1px;
+    width: 20px;
+  }
+  .SocialMedia {
+    left: 5px;
+  }
+  .ScrollDown {
+    right: 5px;
+  }
+  .follow,
+  .toscroll {
+    font-size: 10px;
+    transform: translateY(-70px) rotate(90deg);
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: #f33b2f;
+    font-weight: bold;
+  }
+  .arrow {
+    width: 20px;
+    height: 20px;
+    margin: 0 auto;
+    object-fit: contain;
+    color: #f33b2f;
+  }
+  .SocialText ul,
+  li {
+    margin-bottom: 2px;
+  }
+  .SocialText a {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #f33b2f;
+  }
+
+  .AboutSectionContainer .container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .LeftPartSection,
+  .RightPartSection {
+    width: 100%;
+  }
+  .RightPartSection {
+    margin-top: 20px;
+  }
+  .LeftPartSection .CustomSectionTitle {
+    text-align: center;
+  }
+  .Paragraph {
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+  .AboutSectionButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 30px;
+  }
+  .RightPartSection img {
+    width: 300px;
+  }
+  .PImg img {
+    height: 350px;
+  }
+
+  .AllProjects {
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+    margin-top: 30px;
+    gap: 20px;
+  }
+  .ProjectItemImg img {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .LeftPartSection {
+    flex: 4;
+  }
+  .RightPartSection {
+    flex: 3;
+  }
+}

@@ -1,0 +1,254 @@
+.NavigationStyle {
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 5px 0;
+  background-color: white;
+  /* box-shadow: 1px 1px 1px #888888; */
+}
+.NavigationStyle ul {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 98%;
+  text-align: center;
+}
+.NavigationStyle ul li {
+  display: inline-block;
+  border-radius: 8px;
+  /* transition: 0.3s ease background-color;
+  &:hover {
+    background-color: var(--deep-dark);
+  } */
+  font-weight: bold;
+}
+.NavigationStyle a {
+  display: inline-block;
+  padding: 16px 24px;
+  font-size: 20px;
+  color: black;
+  outline: none;
+}
+.NavigationStyle .active {
+  color: #f05340;
+}
+.mobile-menu-icon {
+  position: absolute;
+  right: 16px;
+  top: 20px;
+  width: 50px;
+  cursor: pointer;
+  display: none;
+  outline: none;
+}
+.CloseNavigation {
+  display: none;
+}
+
+.BBB {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+  /* gap: 5rem; */
+  /* background-color: yellow; */
+  margin-top: 20px;
+}
+
+.AboutInfoTitle {
+  font-size: 25px;
+}
+.AboutInfoItems {
+  display: flex;
+  gap: 16px;
+  position: absolute;
+  left: 200px;
+}
+.EachItem {
+  /* background-color: var(--deep-dark); */
+  /* padding: 1px; */
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+.ContactInfoItem {
+  padding: 20px;
+  /* background-color: #f2c0ba; */
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  border: 2px solid #000000;
+  margin-bottom: 20px;
+}
+.ContactInfoItem .icon {
+  color: white;
+  background-color: #f05340;
+  padding: 15px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 15px;
+}
+.ContactForm form {
+  width: 100%;
+}
+.ContactForm .FormGroup {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.FormGroup label {
+  font-size: 15px;
+}
+.FormGroup input,
+.FormGroup textarea {
+  width: 100%;
+  font-size: 15px;
+  padding: 5px;
+  color: #f05340;
+  /* outline: none; */
+  /* border: black; */
+  border-radius: 8px;
+  margin-top: 15px;
+}
+.FormGroup textarea {
+  min-height: 200px;
+  resize: vertical;
+}
+.FormGroup button {
+  background-color: #f05340;
+  color: white;
+  font-size: 15px;
+  display: inline-block;
+  outline: none;
+  border: none;
+  padding: 10px 30px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.subheading {
+  color: black;
+}
+.heading {
+  color: #f05340;
+}
+
+@media only screen and (max-width: 768px) {
+  .BBB {
+    flex-direction: column; /* Added this to make items stack vertically */
+    align-items: flex-start;
+  }
+  .AboutInfoTitle {
+    font-size: 1px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+  .AboutInfoItems {
+    position: initial;
+    gap: 16px;
+    left: auto;
+  }
+  .AboutInfoTitle {
+    font-size: 25px;
+  }
+  .NavigationStyle {
+    padding: 0;
+  }
+
+  .hide-item {
+    display: none;
+  }
+
+  .mobile-menu-icon {
+    display: block;
+  }
+
+  .NavItems {
+    background-color: white;
+    padding: 10px;
+    width: 90%;
+    max-width: 300px;
+    border-radius: 12px;
+    position: absolute;
+    right: 8px;
+    top: 28px;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .NavItems.active {
+    transform: translateX(0);
+  }
+
+  .NavItems .CloseNavigation {
+    display: block;
+    width: 48px;
+    margin: 0 0 0 auto;
+    cursor: pointer;
+  }
+
+  .NavigationStyle ul li {
+    display: block;
+    margin-bottom: 16px;
+  }
+
+  .CustomPtext {
+    font-size: 16px;
+    color: #000000;
+  }
+
+  .Button .btn {
+    font-size: 10px;
+  }
+
+  .CustomSectionTitle p {
+    font-size: 20px;
+  }
+  .CustomSectionTitle h2 {
+    font-size: 30px;
+  }
+}
+
+.CustomPtext {
+  max-width: 500px;
+  margin: 0 auto;
+  /* margin-left: 5px; */
+  /* margin-right: 5px; */
+  padding: 10px;
+  font-size: 16px;
+  line-height: 20px;
+  color: #f05340;
+}
+.Button {
+  margin-top: 10px;
+}
+.Button .btn {
+  background-color: white;
+  padding: 10px 32px;
+  border-radius: 8px;
+  display: inline-block;
+  border: 2px solid #f05340;
+  color: #f05340;
+  font-weight: bold;
+}
+
+.CustomSectionTitle {
+  text-align: center;
+  font-size: 30px;
+}
+.CustomSectionTitle h2 {
+  font-size: 40px;
+  margin-top: 10px;
+  text-transform: uppercase;
+}
+.FooterColHeading {
+  /* font-size: ; */
+  margin-bottom: 2rem;
+}
+.FooterContainer li {
+  margin-bottom: 1rem;
+}
+.FooterContainer a {
+  font-size: 15px;
+  color: #f05340;
+}
