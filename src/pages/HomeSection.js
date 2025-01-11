@@ -12,6 +12,7 @@ import Button from "../components/Button";
 import { GoArrowDown } from "react-icons/go";
 import { FaFacebookSquare } from "react-icons/fa";
 import { FaInstagramSquare } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
 import { VscHeartFilled } from "react-icons/vsc";
 import "./style.css";
 
@@ -63,6 +64,16 @@ function HomeSection() {
                         rel="noreferrer"
                       >
                         <FaInstagramSquare />
+                      </a>
+                    </li>
+
+                    <li>
+                      <a
+                        href="https://github.com/sspcerose"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        <FaGithub />
                       </a>
                     </li>
                   </ul>
